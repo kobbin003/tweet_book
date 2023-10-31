@@ -1,5 +1,4 @@
 import puppeteer, { Browser, Page } from "puppeteer";
-import { LOGIN_URL } from "../constants/constants";
 import { loginUsername } from "./loginUsername";
 import { loginPassword } from "./loginPassword";
 import "dotenv/config";
@@ -12,8 +11,8 @@ export const loginXAccount = async () => {
 		});
 
 		page = await browser.newPage();
-
-		await page.goto(LOGIN_URL, { waitUntil: "networkidle2" });
+		const loginUrl = process.env.LOGIN_URL;
+		await page.goto(loginUrl, { waitUntil: "networkidle2" });
 
 		const username = process.env.USERNAMETWEET;
 		const password = process.env.PASSWORDTWEET;

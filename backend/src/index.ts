@@ -5,7 +5,7 @@ import { notFound } from "./utils/notFound";
 import { errorHandler } from "./utils/errorHandler";
 import { xRouter } from "./routes/x";
 import { connectDb } from "./db";
-import { authRouter } from "./routes/auth/auth";
+import { authRouter } from "./routes/auth";
 import { initializePassportWithJwtStrategy } from "./passport/jwtStrategy";
 import { loginXAccount } from "./scrapper/loginXAccount";
 
