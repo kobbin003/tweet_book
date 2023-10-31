@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+client/
+backend/src/constants
+backend/src/controllers
+backend/src/models
+backend/src/passport
+backend/src/routes
+backend/src/scrapper
+backend/src/types
+backend/src/utils
